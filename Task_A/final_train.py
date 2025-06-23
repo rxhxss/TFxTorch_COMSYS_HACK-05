@@ -26,7 +26,7 @@ if not os.path.exists('./data/Comsys_Hackathon5'):
     download_and_extract_dataset()
 import torch
 import torchvision
-import data_setup,engine,evaluation_metrics,model_builder2,utils
+import data_setup,engine,evaluation_metrics,model_builder,utils
 
 #Setting up device agnostic code
 device="cuda" if torch.cuda.is_available() else "cpu"
