@@ -2,7 +2,7 @@
 Project repository for Comsys Hackathon 5, submission by team TFXTorch
 
 
-#[TFxTorch - Gender and Face Recognition Models] - Hackathon Submission🚀
+# [TFxTorch - Gender and Face Recognition Models] - Hackathon Submission🚀
 
 ![Project Banner](https://via.placeholder.com/800x200?text=ITMicro+Convey+Mote) *(Add actual banner image if available)*
 
@@ -45,6 +45,8 @@ pip install -r requirements.txt
 # Run notebooks (Colab link)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](your_colab_link)
+```
+## 📂 Project Structure
 
 ## Results
 | Model | Accuracy | Precision | Recall |
