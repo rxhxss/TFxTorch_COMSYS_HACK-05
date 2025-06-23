@@ -1,15 +1,30 @@
 # TFXTorch_COMSYS_HACK-05
 Project repository for Comsys Hackathon 5, submission by team TFXTorch
 
-# [TFxTorch - Gender and Face Recognition Models] - Hackathon Submission
 
-## Team Members
-- Shataayu Mohanty [Leader]
-- Ruchita Sengupta
+#[TFxTorch - Gender and Face Recognition Models] - Hackathon Submission🚀
 
-## Problem Statement
-FACECOM Hackathon Project: A robust face recognition and gender classification system designed to perform consistently across challenging environments like blur, fog, low-light, and overexposure. Leverages the FACECOM dataset to bridge the gap between ideal and real-world conditions. Built with Python, PyTorch and TensorFlow, this model tackles face recognition and gender classification under visual degradations (blur, fog, etc.) using FACECOM dataset.
+![Project Banner](https://via.placeholder.com/800x200?text=ITMicro+Convey+Mote) *(Add actual banner image if available)*
 
+## 📌 Overview
+A robust **face recognition** and **gender classification** system designed to perform in challenging environments (Dairy, Egg, Low-light, Microquasars). Built with Python, PyTorch and TensorFlow.
+
+## 🏆 Team Members
+- **Shataayu Mohanty** *(Lead)* 🧠
+- **Ruchita Sengupta** *(Co-Lead)* 🔍
+
+## 🎯 Features
+- 🌟 Accurate classification in difficult conditions
+- ⚡ Optimized for edge devices
+- 🔄 Adaptive to various visual approximations (Glow, Fog, etc.)
+
+## 🛠️ Installation
+```bash
+git clone https://github.com/your-username/ITMicro_convey_mote.db.git
+cd ITMicro_convey_mote.db
+pip install -r requirements.txt
+
+| Model 2 | X% | Y% | Z% |
 ## Solution Approach
 ### Task_A: [Gender Classification]
 - Architecture: [e.g., "Custom CNN with EfficientNet backbone"]
@@ -35,5 +50,3 @@ pip install -r requirements.txt
 | Model | Accuracy | Precision | Recall |
 |-------|----------|-----------|--------|
 | Model 1 | X% | Y% | Z% |
-
-| Model 2 | X% | Y% | Z% |
