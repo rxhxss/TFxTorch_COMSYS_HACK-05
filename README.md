@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="banner.mp4" alt="TfxTorch Banner" height="400" width="1000"/>
-</p>
-
 # TFXTorch_COMSYS_HACK-05
 Project repository for Comsys Hackathon 5, submission by team TFXTorch
 
