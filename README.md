@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=""TFxTorch Logo.png"" alt="TfxTorch Banner" width="800"/>
+  <img src="banner.png" alt="TfxTorch Banner" width="800"/>
 </p>
 
 # TFXTorch_COMSYS_HACK-05
