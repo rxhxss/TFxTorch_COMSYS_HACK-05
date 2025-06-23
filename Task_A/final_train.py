@@ -40,7 +40,7 @@ test_dir="/content/data/Comys_Hackathon5/Task_A/val"
 
 
 
-auto_transforms,model=model_builder2.model_creation(num_classes=2,device=device)
+auto_transforms,model=model_builder.model_creation(num_classes=2,device=device)
 loss_fn=torch.nn.CrossEntropyLoss()
 optimizer=torch.optim.Adam(params=model.parameters(),lr=0.001)
 
