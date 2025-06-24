@@ -5,7 +5,7 @@ Project repository for Comsys Hackathon 5, submission by team TFXTorch
 # [TFxTorch - Gender and Face Recognition Models] - Hackathon Submission🚀
 
 ## 📌 Overview
-A robust **face recognition** and **gender classification** system designed to perform in challenging environments (Dairy, Egg, Low-light, Microquasars). Built with Python, PyTorch and TensorFlow.
+A robust **face recognition** and **gender classification** system designed to perform in challenging environments (Fogg, Dust, Low Contrast, etc). Built with Python, PyTorch and TensorFlow.
 
 ## 🏆 Team Members
 - **Shataayu Mohanty** *(Lead)* 🧠
