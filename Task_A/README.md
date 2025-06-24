@@ -28,6 +28,7 @@ This folder contains all the necessary scripts and files for training and evalua
    ```
 2. **To Load the Model**:
    ```
+   # Pass in the model and model_save_path and device['cpu' or 'cuda']
    from Task_A import load_model_weights
    load_model_weights.load_model(final_train.model, final_train.model_save_path, final_train.device)
    ```
