@@ -23,10 +23,9 @@ This folder contains all the necessary scripts and files for training and evalua
 
 1. **Install dependencies**:
    ```
-   pip install torch torchvision pandas numpy
-   python final_train.py
+   pip install torch torchvision pandas numpy sklearn 
    ```
-2. **To Load the Model**:
+2. **Code To Load the Model**:
    ```
    # Pass in the model and model_save_path and device['cpu' or 'cuda']
    from Task_A import load_model_weights
