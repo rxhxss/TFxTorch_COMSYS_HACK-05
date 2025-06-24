@@ -24,8 +24,16 @@ A modular deep learning pipeline for training and inference. Structured for clar
 | `load_model_weights_Task_B.py` | Loads pretrained weights into models. | ⬇️ |
 
 ---
-
-1. **Code To Test The Model**:
+1. **Install dependencies**:
+   ```
+   pip install torch torchvision pandas numpy sklearn 
+   ```
+2. **Code To Load the Model**:
+   ```
+   # Pass in the model and model_save_path and device['cpu' or 'cuda']
+   from Task_B import load_model_weights_Task_B
+   load_model_weights_Task_B.load_model(final_training.model_1, final_training.model_save_path, device="cpu")
+3. **Code To Test The Model**:
    ```
    #Make sure all the scripts and data are downloaded and the final_training script has been run
    #Calculating the embeddings of distorted images in the test set
