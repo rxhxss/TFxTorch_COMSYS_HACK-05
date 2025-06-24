@@ -42,6 +42,6 @@ This folder contains all the necessary scripts and files for training and evalua
                    32,
                    final_train.device,
                    None)
-   #Printing the results on test test
+   #Printing the results on test set
    evaluation_metrics.print_metrics(test_results)
    ```
