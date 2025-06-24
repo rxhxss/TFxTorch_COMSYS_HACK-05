@@ -64,6 +64,7 @@ from Task_A import final_train
 * Run this google colab notebook:
   https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Installation process for [Task_B](./Task_B):
 * Check Requirements.txt
