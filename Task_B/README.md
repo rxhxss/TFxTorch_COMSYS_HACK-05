@@ -25,38 +25,4 @@ A modular deep learning pipeline for training and inference. Structured for clar
 
 ---
 
-🚀 Embedding Model with EfficientNet-B0 + Triplet Loss
-This model is an embedding network designed for feature extraction and similarity learning, using:
 
-Backbone: � EfficientNet-B0 (pretrained on ImageNet)
-
-Projection Head: 🔧 Modified dense layer for optimal embedding space
-
-Loss Function: 🔺 Triplet Loss (for triplet matching)
-
-🏗 Model Architecture
-🔍 Feature Extractor
-Base Model: EfficientNet-B0 (fine-tuned)
-
-Modified Layers:
-
-Replaced the default classification head
-
-Added a custom projection layer (e.g., 128-D embeddings)
-
-Includes BatchNorm + Dropout for regularization
-
-📉 Triplet Loss Training
-Loss Type: Semi-hard or hard triplet mining
-
-Margin: α = 1.0 (adjustable)
-
-Distance Metric: Euclidean 
-
-
-📦 Dependencies
-Python 3.8+
-
-PyTorch 2.0+
-
-efficientnet_pytorch
