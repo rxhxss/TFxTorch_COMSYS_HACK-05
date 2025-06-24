@@ -8,7 +8,7 @@ This folder contains all the necessary scripts and files for training and evalua
 
 | File | Description |
 |------|-------------|
-| 🏋️ `Task_A_gender_classification_weights.pth` | Pre-trained model weights (PyTorch `.pth` format) |
+| 🏋️ [Task_A_gender_classification_weights.pth](Task_A_gender_classification_weights.pth) | Pre-trained model weights (PyTorch `.pth` format) |
 | 🗃️ `data_setup.py` | Handles data loading, preprocessing, and dataset creation |
 | 🚀 `engine.py` | Contains core training loop |
 | 📊 `evaluation_metrics.py` | Implements evaluation metrics (e.g., accuracy, F1-score) |
