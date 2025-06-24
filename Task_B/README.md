@@ -25,18 +25,4 @@ A modular deep learning pipeline for training and inference. Structured for clar
 
 ---
 
-## **How to Run** ▶️  
-1. **Data Setup**: Run `datasetup.py`.  
-2. **Train**: Execute `final_training.py` for training and inference.  
-3. **Inference**: Use `inference_stage.py` for predictions(.  
 
----
-
-## **Dependencies** 📦  
-- Python 3.x  
-- PyTorch  
-- NumPy  
-
----
-
-✨ **Tip**: Reuse models with `load_model_weights_Task_B.py`! 
