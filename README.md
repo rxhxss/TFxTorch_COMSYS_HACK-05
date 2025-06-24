@@ -49,4 +49,4 @@ pip install -r requirements.txt
 ## Results
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
-| Model 1 | 91.47% | 92.52% | 97.38% | 94.89% |
+| Task_A | 91.47% | 92.52% | 97.38% | 94.89% |
