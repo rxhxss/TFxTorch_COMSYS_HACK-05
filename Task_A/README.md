@@ -31,3 +31,17 @@ This folder contains all the necessary scripts and files for training and evalua
    from Task_A import load_model_weights
    load_model_weights.load_model(final_train.model, final_train.model_save_path, final_train.device)
    ```
+2. **Code To Test The Model**:
+   ```
+   #Make sure all the scripts are downloaded and the final_train script has been run
+   #Replace the test_data_path: str with the actual test data path
+   from Task_A import evaluation_metrics
+   test_results=evaluation_metrics.evaluate_model(final_train.model,
+                   test_data_path: str,
+                   final_train.auto_transforms,
+                   32,
+                   final_train.device,
+                   None)
+   #Printing the results on test test
+   evaluation_metrics.print_metrics(test_results)
+   ```
