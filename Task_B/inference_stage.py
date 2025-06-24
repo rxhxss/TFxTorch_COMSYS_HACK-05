@@ -174,7 +174,7 @@ def print_metrics(metrics: dict):
     Args:
         metrics: Dictionary containing evaluation metrics
     """
-    print(f"Accuracy: {metrics['accuracy']:.4f}")
-    print(f"Precision: {metrics['precision']:.4f}")
-    print(f"Recall: {metrics['recall']:.4f}")
-    print(f"F1-score: {metrics['f1']:.4f}")    
+    print(f"Accuracy: {metrics['Accuracy']:.4f}")
+    print(f"Precision: {metrics['Precision']:.4f}")
+    print(f"Recall: {metrics['Recall']:.4f}")
+    print(f"F1-score: {metrics['F1']:.4f}")    
