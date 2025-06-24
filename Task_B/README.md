@@ -25,4 +25,14 @@ A modular deep learning pipeline for training and inference. Structured for clar
 
 ---
 
-
+1. **Code To Test The Model**:
+   ```
+   #Make sure all the scripts and data are downloaded and the final_training script has been run
+   #Calculating the embeddings of distorted images in the test set
+   from Task_B import inference_stage
+   test_img_paths,test_labels=inference_stage.reference_paths_labels(test_data_path:str)
+   test_embeddings=inference_stage.compute_embeddings(final_training.model_1,val_img_paths,final_training.transform)
+   test_image_path=""   #Pass in the test image path u want to check for match
+   match,predicted_id=inference_stage.match_faces(test_image_path, test_embeddings,test_labels, final_training.model_1, final_train.transform, threshold=0.7)
+   print(f"Match:{match}, Predicted Person:{predicted_id}")
+   ```
