@@ -18,7 +18,7 @@ A robust **face recognition** and **gender classification** system designed to p
 
 ## 🛠️ Installation
 
-Installation process for Task_A:
+Installation process for [Task_A](./Task_A):
 * Check Requirements.txt
 * Run this code in notebook:
  ```
