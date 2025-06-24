@@ -69,3 +69,4 @@ from Task_A import final_train
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
 | Task_A | 91.47% | 92.52% | 97.38% | 94.89% |
+| Task_B | 91.85% | 91.85% | 100% | 95.75% |
