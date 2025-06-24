@@ -63,6 +63,55 @@ from Task_A import final_train
 ---OR---
 * Run this google colab notebook:
   https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing
+
+
+Installation process for [Task_B](./Task_B):
+* Check Requirements.txt
+* Run this code in notebook:
+```
+# Continue with regular imports
+import matplotlib.pyplot as plt
+import torch
+import torchvision
+import sys
+
+from torch import nn
+from torchvision import transforms,datasets
+from torch.utils.data import DataLoader
+import gdown
+import pathlib
+import requests
+import zipfile
+import os
+import numpy as np
+from tqdm.auto import tqdm
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
+
+
+
+# Try to import the going_modular directory, download it from GitHub if it doesn't work
+try:
+    from Task_B import datasetup, model_creation1, loss_fn, train, inference_stage,utils_Task_B,load_model_weights_Task_B
+except:
+    # Get the going_modular scripts
+    print("[INFO] Couldn't find going_modular scripts... downloading them from GitHub.")
+    !git clone https://github.com/ShataayuM/TFxTorch_COMSYS_HACK-05.git
+    !mv TFxTorch_COMSYS_HACK-05/Task_B .
+    !rm -rf TFxTorch_COMSYS_HACK-05
+
+# Add the Task_A directory to the system path
+sys.path.append('./Task_B')
+
+from Task_B import datasetup, model_creation1, loss_fn, train, inference_stage,utils_Task_B,load_model_weights_Task_B
+print("[INFO] All scripts succesfully imported...")
+
+#Running the code
+from Task_B import final_training
+```
+---OR---
+* Run this google colab notebook:
+  https://colab.research.google.com/drive/1j_vhR1zGUIlH_hftBPnVafrmqO3wB2We?usp=sharing
+  
 ## 📂 Project Structure
 
 ## Results
