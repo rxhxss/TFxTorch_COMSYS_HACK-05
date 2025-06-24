@@ -47,6 +47,6 @@ pip install -r requirements.txt
 ## 📂 Project Structure
 
 ## Results
-| Model | Accuracy | Precision | Recall |
-|-------|----------|-----------|--------|
-| Model 1 | X% | Y% | Z% |
+| Model | Accuracy | Precision | Recall | F1-Score |
+|-------|----------|-----------|--------|----------|
+| Model 1 | 91.47% | 92.52% | 97.38% | 94.89% |
