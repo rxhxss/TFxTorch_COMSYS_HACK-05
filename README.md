@@ -17,33 +17,52 @@ A robust **face recognition** and **gender classification** system designed to p
 - 🔄 Adaptive to various visual approximations (Glow, Fog, etc.)
 
 ## 🛠️ Installation
-```bash
-git clone https://github.com/your-username/ITMicro_convey_mote.db.git
-cd ITMicro_convey_mote.db
-pip install -r requirements.txt
 
-| Model 2 | X% | Y% | Z% |
-## Solution Approach
-### Task_A: [Gender Classification]
-- Architecture: [e.g., "Custom CNN with EfficientNet backbone"]
-- Key Features: [List 2-3 special techniques used]
+Installation process for Task_A:
+* Check Requirements.txt
+* Run this code in notebook:
+ ```
+# Continue with regular imports
+import matplotlib.pyplot as plt
+import torch
+import torchvision
+import sys
 
-### Task_B: [Face Recognition]
-- Architecture: 
-- Key Features:
+from torch import nn
+from torchvision import transforms,datasets
+from torch.utils.data import DataLoader
+import gdown
+import pathlib
+import requests
+import zipfile
+import os
+import numpy as np
+from tqdm.auto import tqdm
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
 
-## How to Run
-bash
-git clone [your-repo-url]
-cd your-project
 
-# Install dependencies
-pip install -r requirements.txt
 
-# Run notebooks (Colab link)
+# Try to import the going_modular directory, download it from GitHub if it doesn't work
+try:
+    from Task_A import data_setup, engine,model_builder,evaluation_metrics,utils,load_model_weights
+except:
+    # Get the going_modular scripts
+    print("[INFO] Couldn't find going_modular scripts... downloading them from GitHub.")
+    !git clone https://github.com/ShataayuM/TFxTorch_COMSYS_HACK-05.git
+    !mv TFxTorch_COMSYS_HACK-05/Task_A .
+    !rm -rf TFxTorch_COMSYS_HACK-05
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](your_colab_link)
+# Add the Task_A directory to the system path
+sys.path.append('./Task_A')
+
+from Task_A import data_setup, engine,model_builder,evaluation_metrics,utils,load_model_weights
+
+#Running the code
+from Task_A import final_train
 ```
+---OR---
+* Run this google colab notebook:
+  https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing
 ## 📂 Project Structure
 
 ## Results
