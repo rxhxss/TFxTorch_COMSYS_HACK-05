@@ -78,11 +78,12 @@ A modular deep learning pipeline for training and inference. Structured for clar
    
    ```
 OR
-##  🚀Test the data  using this notebook   
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lgfIi9BsN47DYFf6nhHA9FmdQfogCtpK?usp=sharing))
+##  🚀Test the data using this notebook (installation included)  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lgfIi9BsN47DYFf6nhHA9FmdQfogCtpK?usp=drive_link)
 
-   ```
+  ---
 4. Model Architecture:
    **Siamese Network** with **EfficientNetB0** backbone 🔄, using **Triplet Loss** (margin = 1.0)  for metric learning, optimized with **Adam** ⚡ (lr=1e-2). Features are L2-normalized before distance computation in the     embedding space.
    *(Input: 160x160 RGB images | Output: 128-dim embeddings)*
-```
+
+  ---
