@@ -74,6 +74,7 @@ This folder contains all the necessary scripts and files for training and evalua
 
 ---
    4. **Model Architecture & Training Details**
+   5. 
    🔹 Backbone: MobileNetV2 (pre-trained on ImageNet)
 
    🔹 Head: Custom classification head (2 output classes)
