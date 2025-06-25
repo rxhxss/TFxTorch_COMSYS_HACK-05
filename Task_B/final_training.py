@@ -69,7 +69,7 @@ val_embeddings=inference_stage.compute_embeddings(model_1,val_img_paths,transfor
 
 
 #Evaluation metrics
-evaluation_results=inference_stage.evaluation_metrics(model_1, "flattened_dataset/val", val_embeddings, val_labels, transform, threshold=0.7)
+evaluation_results=inference_stage.evaluation_metrics(model_1, "/content/data/Comys_Hackathon5/Task_B/val", val_embeddings, val_labels, transform, threshold=0.7)
 inference_stage.print_metrics(evaluation_results)
 mode_save_path=utils_Task_B.save_model(model_1,
                target_dir="models",
