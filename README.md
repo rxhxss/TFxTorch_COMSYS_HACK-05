@@ -98,7 +98,7 @@ except:
     !mv TFxTorch_COMSYS_HACK-05/Task_B .
     !rm -rf TFxTorch_COMSYS_HACK-05
 
-# Add the Task_A directory to the system path
+# Add the Task_B directory to the system path
 sys.path.append('./Task_B')
 
 from Task_B import datasetup, model_creation1, loss_fn, train, inference_stage,utils_Task_B,load_model_weights_Task_B
