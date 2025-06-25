@@ -130,42 +130,42 @@ def match_faces(test_image_path, reference_embeddings, reference_labels, model, 
 
     # Determine if distance is below acceptance threshold
     return (1 if min_distance < threshold else 0), best_match_label
-def evaluation_metrics(model,test_folder_path,reference_embeddings,reference_labels,transform,threshold=0.7):
+def evaluation_metrics(model, test_folder_path, reference_embeddings, reference_labels, transform, threshold=0.7):
     print("[INFO]: Computing Evaluation Metrics for our model and embeddings....")
-    y_true=[]
-    y_pred=[]
-    y_pred_binary = [] # Initialize y_pred_binary here
-    for person in os.listdir(test_folder_path):
-      person_dir = os.path.join(test_folder_path, person)
-      if os.path.isdir(person_dir):
-        for img_name in os.listdir(person_dir):
-          img_path = os.path.join(person_dir, img_name)
-          if os.path.isfile(img_path):
-
-            m,predicted_id=match_faces(img_path,reference_embeddings,reference_labels,model,transform,threshold) # Corrected
-            y_true.append(person)
-            y_pred_binary.append(m)
-            y_pred.append(predicted_id)
-
-
-    y_pred_binary =np.array(y_pred_binary)
+    y_true = []
+    y_pred = []
+    y_pred_binary = []
+    
+    for identity in os.listdir(test_folder_path):
+        identity_dir = os.path.join(test_folder_path, identity)
+        if not os.path.isdir(identity_dir):
+            continue
+            
+        # Process images directly in the identity folder
+        for img_name in os.listdir(identity_dir):
+            img_path = os.path.join(identity_dir, img_name)
+            if os.path.isfile(img_path) :
+                m, predicted_id = match_faces(img_path, reference_embeddings, reference_labels, model, transform, threshold)
+                y_true.append(identity)
+                y_pred_binary.append(m)
+                y_pred.append(predicted_id)
+        
+        # Process images in the distortion subfolder if it exists
+        distortion_dir = os.path.join(identity_dir, 'distortion')
+        if os.path.exists(distortion_dir) and os.path.isdir(distortion_dir):
+            for img_name in os.listdir(distortion_dir):
+                img_path = os.path.join(distortion_dir, img_name)
+                if os.path.isfile(img_path) and img_name.lower().endswith(('.png', '.jpg', '.jpeg')):
+                    m, predicted_id = match_faces(img_path, reference_embeddings, reference_labels, model, transform, threshold)
+                    y_true.append(identity)
+                    y_pred_binary.append(m)
+                    y_pred.append(predicted_id)
+    
+    y_pred_binary = np.array(y_pred_binary)
     true_matches = [1 if pred == true else 0 for true, pred in zip(y_true, y_pred)]
     y_true_binary = np.array(true_matches)
-
-
-    # Calculate metrics
-    accuracy = accuracy_score(y_true_binary, y_pred_binary)
-    precision = precision_score(y_true_binary, y_pred_binary)
-    recall = recall_score(y_true_binary, y_pred_binary)
-    f1 = f1_score(y_true_binary, y_pred_binary)
-
-    return {
-        "Accuracy": accuracy,
-        "Precision": precision,
-        "Recall": recall,
-        "F1": f1,
-        "Threshold": threshold
-    }
+    
+    return y_true, y_pred, y_true_binary, y_pred_binary
 
 def print_metrics(metrics: dict):
     """
