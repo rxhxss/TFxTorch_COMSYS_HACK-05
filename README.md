@@ -108,7 +108,7 @@ print("[INFO] All scripts succesfully imported...")
 ```
 ---OR---
 * Run this google colab notebook:
-  https://colab.research.google.com/drive/1j_vhR1zGUIlH_hftBPnVafrmqO3wB2We?usp=sharing
+  [https://colab.research.google.com/drive/1j_vhR1zGUIlH_hftBPnVafrmqO3wB2We?usp=sharing](https://colab.research.google.com/drive/1j_vhR1zGUIlH_hftBPnVafrmqO3wB2We?usp=sharing)
   
 ## 📂 Project Structure
 
