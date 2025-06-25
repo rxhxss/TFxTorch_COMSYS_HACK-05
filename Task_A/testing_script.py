@@ -1,5 +1,6 @@
 import torch
 import torchvision
+#Make sure all the scripts are downloaded for Task_A as per the installation process in the repo
 import model_builder,evaluation_metrics# import your model class
 NUM_CLASSES=2
 BATCH_SIZE=32
