@@ -19,7 +19,7 @@ A robust **face recognition** and **gender classification** system designed to p
 ## 🛠️ Installation
 
 Installation process for [Task_A](./Task_A):
-* Check Requirements.txt
+* Check [Requirements.txt](./Requirements.txt)
 * Run this code in notebook:
  ```
 # Continue with regular imports
@@ -65,7 +65,7 @@ print("[INFO] All scripts succesfully imported...")
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Installation process for [Task_B](./Task_B):
-* Check Requirements.txt
+* Check [Requirements.txt](./Requirements.txt)
 * Run this code in notebook:
 ```
 # Continue with regular imports
