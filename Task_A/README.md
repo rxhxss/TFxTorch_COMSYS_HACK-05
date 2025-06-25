@@ -43,7 +43,7 @@ This folder contains all the necessary scripts and files for training and evalua
 3. **Code To Test The Model**:
    ```
    #Make sure all the scripts for Task_A are downloaded as per the installation process in the repo
-   #Copy the code from testing_script.py((./Task_A/testing_script.py) and pass in the test directory in it to test the model
+   #Copy the code from testing_script.py(./Task_A/testing_script.py) and pass in the test directory in it to test the model
    import torch
    import torchvision
    from Task_A import model_builder,evaluation_metrics   # import your model class
@@ -53,6 +53,8 @@ This folder contains all the necessary scripts and files for training and evalua
    
    # Initialize your model architecture
    auto_transforms,model = model_builder.model_creation(NUM_CLASSES,device)
+###Run the test_script using this notebook   
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/repo-name/blob/main/Task_A/testing_script.py)
    
    
    # Load the saved state dict
