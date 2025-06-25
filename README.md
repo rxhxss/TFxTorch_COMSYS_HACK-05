@@ -60,7 +60,7 @@ print("[INFO] All scripts succesfully imported...")
 ```
 ---OR---
 * Run this google colab notebook:
-  [https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing](https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing)
+  [![Open In Colab](https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing)](https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -108,7 +108,7 @@ print("[INFO] All scripts succesfully imported...")
 ```
 ---OR---
 * Run this google colab notebook:
-  [https://colab.research.google.com/drive/1j_vhR1zGUIlH_hftBPnVafrmqO3wB2We?usp=sharing](https://colab.research.google.com/drive/1j_vhR1zGUIlH_hftBPnVafrmqO3wB2We?usp=sharing)
+  [![Open In Colab](https://colab.research.google.com/drive/1j_vhR1zGUIlH_hftBPnVafrmqO3wB2We?usp=sharing)](https://colab.research.google.com/drive/1j_vhR1zGUIlH_hftBPnVafrmqO3wB2We?usp=sharing)
   
 ## 📂 Project Structure
 
