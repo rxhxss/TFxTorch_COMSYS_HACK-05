@@ -165,7 +165,19 @@ def evaluation_metrics(model, test_folder_path, reference_embeddings, reference_
     true_matches = [1 if pred == true else 0 for true, pred in zip(y_true, y_pred)]
     y_true_binary = np.array(true_matches)
     
-    return y_true, y_pred, y_true_binary, y_pred_binary
+    # Calculate metrics
+    accuracy = accuracy_score(y_true_binary, y_pred_binary)
+    precision = precision_score(y_true_binary, y_pred_binary)
+    recall = recall_score(y_true_binary, y_pred_binary)
+    f1 = f1_score(y_true_binary, y_pred_binary)
+
+    return {
+        "Accuracy": accuracy,
+        "Precision": precision,
+        "Recall": recall,
+        "F1": f1,
+        "Threshold": threshold
+    }
 
 def print_metrics(metrics: dict):
     """
