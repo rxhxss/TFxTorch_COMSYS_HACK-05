@@ -30,8 +30,12 @@ This folder contains all the necessary scripts and files for training and evalua
    # Pass in the model and model_save_path and device['cpu' or 'cuda']
    NUM_CLASSES=2
    device="cuda" if torch.cuda.is_available() else "cpu"
+   #Make sure all the scripts for Task_A are downloaded as per the installation process in the repo
    from Task_A import load_model_weights,model_builder
+
+   #Creating model instance
    auto_transforms,model = model_builder.model_creation(NUM_CLASSES,device)
+   
    # Load the saved state dict
    !wget https://github.com/ShataayuM/TFxTorch_COMSYS_HACK-05/raw/refs/heads/main/Task_A/Task_A_gender_classification_weights.pth -O Task_A_model.pth
    load_model_weights.load_model(model,"Task_A_model.pth", device)
