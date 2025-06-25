@@ -73,7 +73,7 @@ This folder contains all the necessary scripts and files for training and evalua
    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lQrnUYdtKuWNO71swIEYa3kiDspUsWG9?usp=sharing)
 
 ---
-   4. **Model Architecture & Training Details**
+4. **Model Architecture & Training Details**
     
    🔹 Backbone: MobileNetV2 (pre-trained on ImageNet)
 
