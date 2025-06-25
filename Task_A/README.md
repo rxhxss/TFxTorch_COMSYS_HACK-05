@@ -38,7 +38,7 @@ This folder contains all the necessary scripts and files for training and evalua
    ```
 3. **Code To Test The Model**:
    ```
-   #Make sure all the scripts are downloaded
+   #Make sure all the scripts for Task_A are downloaded as per the installation process in the repo
    #Copy the code from testing_script.py and pass in the test directory in it to test the model
    import torch
    import torchvision
