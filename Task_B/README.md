@@ -28,7 +28,7 @@ A modular deep learning pipeline for training and inference. Structured for clar
    ```
    import torch
    import torchvision
-   #Make sure all the scripts are downloaded as per the installation process of Task_B in the ReadME file of the repo
+   #Make sure all the scripts for Task_B are downloaded as per the installation process of Task_B in the ReadME file of the repo
    from Task_B import model_creation1,load_model_weights_Task_B   # import your model class and evaluation script
    
    
@@ -68,7 +68,7 @@ A modular deep learning pipeline for training and inference. Structured for clar
    #Setting the model to evaluation
    model.eval()
    #Calculating the embeddings of distorted images in the test set
-   test_data_path="/content/data/Comys_Hackathon5/Task_B/val"   #Pass in the test data folder
+   test_data_path=""   #Pass in the test data folder
    test_img_paths,test_labels=inference_stage.reference_paths_labels(test_data_path) #For test_data_path pass in the test folder path
    test_embeddings=inference_stage.compute_embeddings(model,test_img_paths,transform)
    
