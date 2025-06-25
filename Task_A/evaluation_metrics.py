@@ -36,6 +36,7 @@ def evaluate_model(model: torch.nn.Module,
       pin_memory=True,
   )
     model.eval()
+    print("[INFO] Evaluating the model on given data....")                 
 
     # Initialize lists to store true and predicted labels
     y_true = []
