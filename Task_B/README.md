@@ -78,7 +78,7 @@ A modular deep learning pipeline for training and inference. Structured for clar
    
    ```
 OR
-##  🚀Test the data using this notebook (installation included)  
+###  🚀Test the data using this notebook (installation included)  
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lgfIi9BsN47DYFf6nhHA9FmdQfogCtpK?usp=drive_link)
 
   ---
