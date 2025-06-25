@@ -70,14 +70,14 @@ This folder contains all the necessary scripts and files for training and evalua
    evaluation_metrics.print_metrics(metrics)
    ```
 
-4.🚀 Model Architecture & Training Details
-🔹 Backbone: MobileNetV2 (pre-trained on ImageNet)
-🔹 Head: Custom classification head (2 output classes)
-🔹 Loss: 📉 CrossEntropyLoss (multi-class classification)
-🔹 Optimizer: ⚙️ Adam (lr=0.001)
-🔹 Regularization:
-
-🎯 Dropout (p=0.2)
-
-📊 Batch Normalization (for stability)
-🔹 Training: 🔄 Transfer Learning (frozen backbone → fine-tuned head)
+   4.🚀 Model Architecture & Training Details
+   🔹 Backbone: MobileNetV2 (pre-trained on ImageNet)
+   🔹 Head: Custom classification head (2 output classes)
+   🔹 Loss: 📉 CrossEntropyLoss (multi-class classification)
+   🔹 Optimizer: ⚙️ Adam (lr=0.001)
+   🔹 Regularization:
+   
+   🎯 Dropout (p=0.2)
+   
+   📊 Batch Normalization (for stability)
+   🔹 Training: 🔄 Transfer Learning (frozen backbone → fine-tuned head)
