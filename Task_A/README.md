@@ -25,23 +25,43 @@ This folder contains all the necessary scripts and files for training and evalua
    ```
    pip install torch torchvision pandas numpy sklearn 
    ```
-2. **Code To Load the Model**:
+2. **Code To Load the Model Weights in Readable Format**:
    ```
    # Pass in the model and model_save_path and device['cpu' or 'cuda']
-   from Task_A import load_model_weights
-   load_model_weights.load_model(final_train.model, final_train.model_save_path, final_train.device)
+   NUM_CLASSES=2
+   device="cuda" if torch.cuda.is_available() else "cpu"
+   from Task_A import load_model_weights,model_builder
+   auto_transforms,model = model_builder.model_creation(NUM_CLASSES,device)
+   # Load the saved state dict
+   !wget https://github.com/ShataayuM/TFxTorch_COMSYS_HACK-05/raw/refs/heads/main/Task_A/Task_A_gender_classification_weights.pth -O Task_A_model.pth
+   load_model_weights.load_model(model,"Task_A_model.pth", device)
    ```
 3. **Code To Test The Model**:
    ```
-   #Make sure all the scripts are downloaded and the final_train script has been run
-   #Replace the test_data_path: str with the actual test data path
-   from Task_A import evaluation_metrics
-   test_results=evaluation_metrics.evaluate_model(final_train.model,
-                   test_data_path: str,
-                   final_train.auto_transforms,
-                   32,
-                   final_train.device,
-                   None)
-   #Printing the results on test set
-   evaluation_metrics.print_metrics(test_results)
+   #Make sure all the scripts are downloaded
+   #Copy the code from testing_script.py and pass in the test directory in it to test the model
+   import torch
+   import torchvision
+   from Task_A import model_builder,evaluation_metrics   # import your model class
+   NUM_CLASSES=2
+   BATCH_SIZE=32
+   device="cuda" if torch.cuda.is_available() else "cpu"
+   
+   # Initialize your model architecture
+   auto_transforms,model = model_builder.model_creation(NUM_CLASSES,device)
+   
+   
+   # Load the saved state dict
+   
+   !wget https://github.com/ShataayuM/TFxTorch_COMSYS_HACK-05/raw/refs/heads/main/Task_A/Task_A_gender_classification_weights.pth -O Task_A_model.pth
+   
+   model.load_state_dict(torch.load("Task_A_model.pth",weights_only=False))
+   #Pass the test folder path 
+   test_dir=""
+   
+   
+   # Set model to evaluation mode
+   model.eval()
+   metrics=evaluation_metrics.evaluate_model(model,test_dir,auto_transforms,BATCH_SIZE,device,NUM_CLASSES)
+   evaluation_metrics.print_metrics(metrics)
    ```
