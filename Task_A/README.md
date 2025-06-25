@@ -73,16 +73,14 @@ This folder contains all the necessary scripts and files for training and evalua
    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lQrnUYdtKuWNO71swIEYa3kiDspUsWG9?usp=sharing)
 
 ---
-   ## 🚀 Model Architecture & Training Details
+   4. Model Architecture & Training Details
    🔹 Backbone: MobileNetV2 (pre-trained on ImageNet)
    🔹 Head: Custom classification head (2 output classes)
-   🔹 Loss: 📉 CrossEntropyLoss (multi-class classification)
-   🔹 Optimizer: ⚙️ Adam (lr=0.001)
-   🔹 Regularization:
-   
-   🎯 Dropout (p=0.2)
-   
-   📊 Batch Normalization (for stability)
-   🔹 Training: 🔄 Transfer Learning (frozen backbone → fine-tuned head)
+   🔹 Loss: CrossEntropyLoss (multi-class classification)
+   🔹 Optimizer: Adam (lr=0.001)
+   🔹 Regularization:  
+     🔹  Dropout (p=0.2)
+     🔹 Batch Normalization (for stability)
+     🔹 Training: 🔄 Transfer Learning (frozen backbone → fine-tuned head)
 
 ---
