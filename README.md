@@ -47,7 +47,7 @@ try:
     from Task_A import data_setup, engine,model_builder,evaluation_metrics,utils,load_model_weights
 except:
     # Get the going_modular scripts
-    print("[INFO] Couldn't find going_modular scripts... downloading them from GitHub.")
+    print("[INFO] Couldn't find Task_A scripts... downloading them from GitHub.")
     !git clone https://github.com/ShataayuM/TFxTorch_COMSYS_HACK-05.git
     !mv TFxTorch_COMSYS_HACK-05/Task_A .
     !rm -rf TFxTorch_COMSYS_HACK-05
@@ -92,7 +92,7 @@ try:
     from Task_B import datasetup, model_creation1, loss_fn, train, inference_stage,utils_Task_B,load_model_weights_Task_B
 except:
     # Get the going_modular scripts
-    print("[INFO] Couldn't find going_modular scripts... downloading them from GitHub.")
+    print("[INFO] Couldn't find Task_B scripts... downloading them from GitHub.")
     !git clone https://github.com/ShataayuM/TFxTorch_COMSYS_HACK-05.git
     !mv TFxTorch_COMSYS_HACK-05/Task_B .
     !rm -rf TFxTorch_COMSYS_HACK-05
