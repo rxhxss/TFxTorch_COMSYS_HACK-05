@@ -42,7 +42,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_sc
 
 
 
-# Try to import the going_modular directory, download it from GitHub if it doesn't work
+# Try to import the Task_A directory, download it from GitHub if it doesn't work
 try:
     from Task_A import data_setup, engine,model_builder,evaluation_metrics,utils,load_model_weights
 except:
@@ -87,7 +87,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_sc
 
 
 
-# Try to import the going_modular directory, download it from GitHub if it doesn't work
+# Try to import the Task_B directory, download it from GitHub if it doesn't work
 try:
     from Task_B import datasetup, model_creation1, loss_fn, train, inference_stage,utils_Task_B,load_model_weights_Task_B
 except:
@@ -103,8 +103,7 @@ sys.path.append('./Task_B')
 from Task_B import datasetup, model_creation1, loss_fn, train, inference_stage,utils_Task_B,load_model_weights_Task_B
 print("[INFO] All scripts succesfully imported...")
 
-#Running the code
-from Task_B import final_training
+
 ```
 ---OR---
 * Run this google colab notebook:
