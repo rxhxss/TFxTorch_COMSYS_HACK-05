@@ -56,6 +56,7 @@ except:
 sys.path.append('./Task_A')
 
 from Task_A import data_setup, engine,model_builder,evaluation_metrics,utils,load_model_weights
+print("[INFO] All scripts succesfully imported...")
 ```
 ---OR---
 * Run this google colab notebook:
