@@ -24,7 +24,7 @@ A modular deep learning pipeline for training and inference. Structured for clar
    ```
    pip install torch torchvision pandas numpy sklearn 
    ```
-2. **Code To Load the Model**:
+2. **Code To Load the Model Weights in Readable Format**:
    ```
    import torch
    import torchvision
