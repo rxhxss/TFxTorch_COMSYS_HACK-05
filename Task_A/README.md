@@ -65,3 +65,7 @@ This folder contains all the necessary scripts and files for training and evalua
    metrics=evaluation_metrics.evaluate_model(model,test_dir,auto_transforms,BATCH_SIZE,device,NUM_CLASSES)
    evaluation_metrics.print_metrics(metrics)
    ```
+
+4. **Model Architecture:**
+   
+   Fine-tuned MobileNetV2 backbone with custom classification head, using CrossEntropyLoss for multi-class classification. Optimized with Adam (lr=0.001) and trained with transfer learning techniques. Final layer adapted for      2 output classes with dropout (p=0.2) and batch normalization.
