@@ -4,24 +4,19 @@ A modular deep learning pipeline for training and inference. Structured for clar
 
 ---
 
-## **File Structure & Workflow** 📂
+## 📂 Project Structure
 
-| File | Purpose | Emoji |
-|------|---------|-------|
-| **1. Data Setup** | | 📊 |
-| `datasetup.py` | Data loading, preprocessing, and augmentation. | 🔄 |
-| **2. Model Creation** | | 🧠 |
-| `model_creation1.py` | Defines the neural network architecture. | ⚙️ |
-| **3. Loss Function** | | ⚖️ |
-| `loss_fn.py` | Implements custom loss functions (Triplet Loss). | 📉 |
-| **4. Training** | | 🏋️ |
-| `train.py` | Main training script (epochs, validation, checkpointing). | 🔁 |
-| `final_training.py` | Optimized/final training loop. | 🎯 |
-| **5. Inference** | | 🔍 |
-| `inference_stage.py` | Runs predictions on new data with trained models. Calculates reference embeddings and labels and matches it to test data| 🔮 |
-| **Utilities** | | 🛠️ |
-| `utils_Task_B.py` | Saves the model in a .pth file | 📝 |
-| `load_model_weights_Task_B.py` | Loads pretrained weights into models. | ⬇️ |
+| File Name                  | Description                                                                 |
+|----------------------------|-----------------------------------------------------------------------------|
+| **datasetup.py**           | 🏗️ Script for dataset preparation and preprocessing                        |
+| **final_training.py**      | 🏋️‍♂️ Main script for model training with final configurations              |
+| **inference_stage.py**     | 🔍 Script for running inference/predictions with trained model              |
+| **load_model_weights_Task_B.py** | ⚖️ Utility for loading pre-trained model weights                          |
+| **loss_fn.py**            | 📉 Custom loss function implementation [Triplet Loss]                                     |
+| **model_creation1.py**     | 🧠 Neural network model architecture definition                             |
+| **train.py**               | 🚂 Basic training script (likely used for initial experiments)              |
+| **utils_Task_B.py**        | 🧰 Function to save our models weights                       |
+
 
 ---
 1. **Install dependencies**:
@@ -44,3 +39,6 @@ A modular deep learning pipeline for training and inference. Structured for clar
    match,predicted_id=inference_stage.match_faces(test_image_path, test_embeddings,test_labels, final_training.model_1, final_train.transform, threshold=0.7)
    print(f"Match:{match}, Predicted Person:{predicted_id}")
    ```
+4. Model Architecture:
+   **Siamese Network** with **EfficientNetB0** backbone 🔄, using **Triplet Loss** (margin = 1.0)  for metric learning, optimized with **Adam** ⚡ (lr=1e-2). Features are L2-normalized before distance computation in the     embedding space.
+   *(Input: 160x160 RGB images | Output: 128-dim embeddings)*
