@@ -70,6 +70,14 @@ This folder contains all the necessary scripts and files for training and evalua
    evaluation_metrics.print_metrics(metrics)
    ```
 
-4. **Model Architecture:**
-   
-   Fine-tuned MobileNetV2 backbone with custom classification head, using CrossEntropyLoss for multi-class classification. Optimized with Adam (lr=0.001) and trained with transfer learning techniques. Final layer adapted for      2 output classes with dropout (p=0.2) and batch normalization.
+4.🚀 Model Architecture & Training Details
+🔹 Backbone: MobileNetV2 (pre-trained on ImageNet)
+🔹 Head: Custom classification head (2 output classes)
+🔹 Loss: 📉 CrossEntropyLoss (multi-class classification)
+🔹 Optimizer: ⚙️ Adam (lr=0.001)
+🔹 Regularization:
+
+🎯 Dropout (p=0.2)
+
+📊 Batch Normalization (for stability)
+🔹 Training: 🔄 Transfer Learning (frozen backbone → fine-tuned head)
