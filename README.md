@@ -56,13 +56,10 @@ except:
 sys.path.append('./Task_A')
 
 from Task_A import data_setup, engine,model_builder,evaluation_metrics,utils,load_model_weights
-
-#Running the code
-from Task_A import final_train
 ```
 ---OR---
 * Run this google colab notebook:
-  https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing
+  [https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing](https://colab.research.google.com/drive/19B_VGJmK5iIU79VyTt-GhgE0_K66zwuG?usp=sharing)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
