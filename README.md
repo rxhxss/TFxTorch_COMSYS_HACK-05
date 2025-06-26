@@ -126,17 +126,17 @@ print("[INFO] All scripts succesfully imported...")
   │ ├── testing_script.py
   │ └── utils.py
   └── Task_B/
-  |  ├── README.md
-  |  ├── Task_B_face_recognition_weights.pth
-  |  ├── datasetup.py
-  |  ├── final_training.py
-  |  ├── inference_stage.py
-  |  ├── load_model_weights_Task_B.py
-  |  ├── loss_fn.py
-  |  ├── model_creation1.py
-  |  ├── testing_script_Task_B.py
-  |  ├── train.py
-  |  └── utils_Task_B.py
+    ├── README.md
+    ├── Task_B_face_recognition_weights.pth
+    ├── datasetup.py
+    ├── final_training.py
+    ├── inference_stage.py
+    ├── load_model_weights_Task_B.py
+    ├── loss_fn.py
+    ├── model_creation1.py
+    ├── testing_script_Task_B.py
+    ├── train.py
+    └── utils_Task_B.py
 
 
 ## Results
