@@ -147,4 +147,4 @@ print("[INFO] All scripts succesfully imported...")
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
 | Task_A | 92.18% | 95.06% | 95.34% | 95.30% |
-| Task_B | 92.86% | 92.86% | 100% | 96.30% |
+| Task_B | 92.86% | 93.71% | 93.07% | 93.22% |
