@@ -112,31 +112,33 @@ print("[INFO] All scripts succesfully imported...")
   
 # 📂 Project Structure
   ├── LICENSE
-  ├── README.md
-  ├── Technical Summary-Comsys Hackathon.pdf
-  ├── Task_A/
-  │ ├── README.md
-  │ ├── Task_A_gender_classification_weights.pth
-  │ ├── data_setup.py
-  │ ├── engine.py
-  │ ├── evaluation_metrics.py
-  │ ├── final_train.py
-  │ ├── load_model_weights.py
-  │ ├── model_builder.py
-  │ ├── testing_script.py
-  │ └── utils.py
-  └── Task_B/
-    ├── README.md
-    ├── Task_B_face_recognition_weights.pth
-    ├── datasetup.py
-    ├── final_training.py
-    ├── inference_stage.py
-    ├── load_model_weights_Task_B.py
-    ├── loss_fn.py
-    ├── model_creation1.py
-    ├── testing_script_Task_B.py
-    ├── train.py
-    └── utils_Task_B.py
+├── README.md
+├── Technical Summary-Comsys Hackathon.pdf
+
+├── Task_A/
+│ ├── README.md
+│ ├── Task_A_gender_classification_weights.pth
+│ ├── data_setup.py
+│ ├── engine.py
+│ ├── evaluation_metrics.py
+│ ├── final_train.py
+│ ├── load_model_weights.py
+│ ├── model_builder.py
+│ ├── testing_script.py
+│ └── utils.py
+
+├── Task_B/
+│ ├── README.md
+│ ├── Task_B_face_recognition_weights.pth
+│ ├── datasetup.py
+│ ├── final_training.py
+│ ├── inference_stage.py
+│ ├── load_model_weights_Task_B.py
+│ ├── loss_fn.py
+│ ├── model_creation1.py
+│ ├── testing_script_Task_B.py
+│ ├── train.py
+│ └── utils_Task_B.py
 
 
 ## Results
