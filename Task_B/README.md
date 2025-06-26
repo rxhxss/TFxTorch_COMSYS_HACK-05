@@ -48,7 +48,7 @@ A modular deep learning pipeline for training and inference. Structured for clar
    import torch
    import torchvision
    #Make sure all the scripts are downloaded as per the installation process in the ReadME file of the repo
-   from Task_B import model_creation1,inference_stage   # import your model class and evaluation script
+   from Task_B import datasetup,model_creation1,inference_stage   # import your model class and evaluation script
    
    
    device="cpu"
