@@ -1,3 +1,4 @@
+
 import numpy as np
 import os
 import torch
@@ -134,7 +135,6 @@ def evaluation_metrics(model, test_folder_path, reference_embeddings, reference_
     print("[INFO]: Computing Evaluation Metrics for our model and embeddings....")
     y_true = []
     y_pred = []
-    y_pred_binary = []
     
     for identity in os.listdir(test_folder_path):
         identity_dir = os.path.join(test_folder_path, identity)
@@ -147,7 +147,6 @@ def evaluation_metrics(model, test_folder_path, reference_embeddings, reference_
             if os.path.isfile(img_path) :
                 m, predicted_id = match_faces(img_path, reference_embeddings, reference_labels, model, transform, threshold)
                 y_true.append(identity)
-                y_pred_binary.append(m)
                 y_pred.append(predicted_id)
         
         # Process images in the distortion subfolder if it exists
@@ -155,27 +154,25 @@ def evaluation_metrics(model, test_folder_path, reference_embeddings, reference_
         if os.path.exists(distortion_dir) and os.path.isdir(distortion_dir):
             for img_name in os.listdir(distortion_dir):
                 img_path = os.path.join(distortion_dir, img_name)
-                if os.path.isfile(img_path) and img_name.lower().endswith(('.png', '.jpg', '.jpeg')):
+                if os.path.isfile(img_path):
                     m, predicted_id = match_faces(img_path, reference_embeddings, reference_labels, model, transform, threshold)
                     y_true.append(identity)
-                    y_pred_binary.append(m)
                     y_pred.append(predicted_id)
     
-    y_pred_binary = np.array(y_pred_binary)
-    true_matches = [1 if pred == true else 0 for true, pred in zip(y_true, y_pred)]
-    y_true_binary = np.array(true_matches)
+    y_true=np.array(y_true)
+    y_pred=np.array(y_pred)
     
     # Calculate metrics
-    accuracy = accuracy_score(y_true_binary, y_pred_binary)
-    precision = precision_score(y_true_binary, y_pred_binary)
-    recall = recall_score(y_true_binary, y_pred_binary)
-    f1 = f1_score(y_true_binary, y_pred_binary)
+    accuracy = accuracy_score(y_true,y_pred)
+    precision = precision_score(y_true,y_pred,average="macro")
+    recall = recall_score(y_true,y_pred,average="macro")
+    f1 = f1_score(y_true,y_pred,average="macro")
 
     return {
-        "Accuracy": accuracy,
+        "Top-1 Accuracy": accuracy,
         "Precision": precision,
         "Recall": recall,
-        "F1": f1,
+        "Macro Averaged F1 Score": f1,
         "Threshold": threshold
     }
 
@@ -186,7 +183,7 @@ def print_metrics(metrics: dict):
     Args:
         metrics: Dictionary containing evaluation metrics
     """
-    print(f"Accuracy: {metrics['Accuracy']:.4f}")
+    print(f"Accuracy: {metrics['Top-1 Accuracy']:.4f}")
     print(f"Precision: {metrics['Precision']:.4f}")
     print(f"Recall: {metrics['Recall']:.4f}")
-    print(f"F1-score: {metrics['F1']:.4f}")    
+    print(f"F1-score: {metrics['Macro Averaged F1 Score']:.4f}")    
